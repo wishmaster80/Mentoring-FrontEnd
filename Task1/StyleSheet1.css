@@ -1,0 +1,25 @@
+﻿ul#menu li {
+    display: inline-block;
+}
+
+
+ul {
+    font-size: 0;
+}
+
+ul#menu li a {
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-right-style: solid;
+    border-color: darkgray;
+    font-size: 12px;
+}
+ul#headerBoxes li {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: blue;
+    width: 300px;
+    font-size: 12px;
+}
