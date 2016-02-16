@@ -1,0 +1,74 @@
+ body {
+	margin: 0;
+	padding: 0;
+ }
+  #background 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: relative; 
+	 margin-left: auto; 
+	 margin-right: auto; 
+	 width: 1300px;
+	 height: 1509px; 
+	 overflow: hidden;
+	 z-index:0;
+     background-color:black;    
+} 
+
+#Header {
+background: -webkit-linear-gradient(90deg, #ffffff 0%, #000000 100%);
+background: -moz-linear-gradient(90deg, #ffffff 0%, #000000 100%);
+background: -o-linear-gradient(90deg, #ffffff 0%, #000000 100%);
+background: -ms-linear-gradient(90deg, #ffffff 0%, #000000 100%);
+background: linear-gradient(0deg, #ffffff 0%, #000000 100%);
+width: 1300px;
+height: 96px;
+}
+#Logotype {
+    left: 49px;
+    top: 13px;
+    position: absolute;
+    width: 109px;
+    height: 75px;
+    z-index: 136;
+}
+  #NowPlaying
+  {
+    left: 10px; 
+	top: 100px; 
+    position: absolute; 
+    width: 450px;
+    height: 450px;
+    z-index:1;
+  }
+  #Concerts
+  {
+      left: 480px; 
+	top: 100px; 
+    background-color:rgba(0, 0, 0, 0.6);
+    position: absolute; 
+    width: 450px;
+    height: 500px;
+    z-index:1;
+    color:white;
+    display: inline-block;
+  }
+#BandPic{
+    width:100px;
+    height:100px;
+    overflow: hidden;
+    }
+ #More{
+     width: 57px;
+    height: 19px;
+ }
+  #Label{
+    font-family: ClearSans;
+    margin:10px 10px;
+    color:#d98000;
+    font-size: 22px;/* Przybli¿enie (wynika z podstawienia czcionki) */
+    font-weight: 100;
+    line-height: 12px;/* Przybli¿enie (wynika z podstawienia czcionki) */
+    text-align: left;
+  }
