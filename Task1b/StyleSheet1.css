@@ -7,13 +7,13 @@
 { 
 	 left: 0px; 
 	 top: 0px; 
-	 position: relative; 
+	 position: absolute; 
 	 margin-left: auto; 
 	 margin-right: auto; 
 	 width: 1300px;
 	 height: 1509px; 
 	 overflow: hidden;
-	 z-index:0;
+	 z-index:-1;
      background-color:black;    
 } 
 
@@ -36,24 +36,22 @@ height: 96px;
 }
   #NowPlaying
   {
-    left: 10px; 
-	top: 100px; 
-    position: absolute; 
-    width: 450px;
-    height: 450px;
+    margin: 10px 10px;
+    position: relative; 
+    display: inline-block;
     z-index:1;
   }
   #Concerts
   {
-      left: 480px; 
-	top: 100px; 
+    margin: 10px 10px;
     background-color:rgba(0, 0, 0, 0.6);
     position: absolute; 
     width: 450px;
     height: 500px;
     z-index:1;
-    color:white;
     display: inline-block;
+    color:white;
+    
   }
 #BandPic{
     width:100px;
@@ -74,15 +72,11 @@ height: 96px;
     line-height: 12px;/* Przybli¿enie (wynika z podstawienia czcionki) */
     text-align: left;    
   }
-ul li{
+  #Concerts ul li{
       width:380px;
       display: inline-block;
   }
 
-  ul li p label{
+  ul li p *{
       display: block;
-  }
-
-  ul li p img{
-      display: block;      
   }
