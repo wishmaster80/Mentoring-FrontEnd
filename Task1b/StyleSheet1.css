@@ -34,13 +34,59 @@ height: 96px;
     height: 75px;
     z-index: 136;
 }
-  #NowPlaying
+  #FirstColumn
   {
     margin: 10px 10px;
     position: relative; 
     display: inline-block;
     z-index:1;
   }
+  #NowPlaying{
+      position: relative;
+  }
+    #NowPlaying label  {
+        position: absolute;
+
+        width: 100%;
+        margin: 0 auto;
+        width: 300px;
+        height: 50px;
+        font-family: ClearSans;
+        color: #ffffff;
+        font-size: 16px; /* Przybli¿enie (wynika z podstawienia czcionki) */
+        font-weight: 400;
+        text-align: left;
+        z-index: 2;
+    }
+    #NowPlaying #Label1 {
+        top: 380px;
+        left: 0;
+    }
+    #NowPlaying #Label2 {
+        top: 400px;
+        left: 0;
+    }
+    #NowPlaying #Label3 {
+        top: 420px;
+        left: 0;
+    }
+  
+  #RecentlyPlayed{
+          margin: 10px 10px;
+    background-color:rgba(0, 0, 0, 0.6);
+    position: absolute; 
+    width: 450px;
+    height: 500px;
+    z-index:1;
+    display: inline-block;
+    color:white;
+  }
+#RecentlyBandPic{
+    width:50px;
+    height:50px;
+    
+    float:left;
+    }
   #Concerts
   {
     margin: 10px 10px;
