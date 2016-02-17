@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
  }
+
   #background 
 { 
 	 left: 0px; 
@@ -57,7 +58,8 @@ height: 96px;
 #BandPic{
     width:100px;
     height:100px;
-    overflow: hidden;
+    
+    float:left;
     }
  #More{
      width: 57px;
@@ -70,5 +72,17 @@ height: 96px;
     font-size: 22px;/* Przybli¿enie (wynika z podstawienia czcionki) */
     font-weight: 100;
     line-height: 12px;/* Przybli¿enie (wynika z podstawienia czcionki) */
-    text-align: left;
+    text-align: left;    
+  }
+ul li{
+      width:380px;
+      display: inline-block;
+  }
+
+  ul li p label{
+      display: block;
+  }
+
+  ul li p img{
+      display: block;      
   }
