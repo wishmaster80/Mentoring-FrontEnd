@@ -90,7 +90,7 @@ z-index:5
     height:50px;    
     float:left;
     }
-  #Concerts
+  #SecoundColumn
   {
     margin: 10px 10px;
     background-color:rgba(0, 0, 0, 0.6);
@@ -121,7 +121,7 @@ z-index:5
     line-height: 12px;/* Przybli¿enie (wynika z podstawienia czcionki) */
     text-align: left;    
   }
-  #Concerts ul li{
+  #SecoundColumn ul li{
       width:380px;
       display: inline-block;
   }
