@@ -66,6 +66,22 @@ z-index:5
         text-align: left;
         z-index: 2;
     }
+    #NowPlaying #MailIco {
+        top: 10px;
+        left: 10px;
+        position:absolute;        
+    }
+    #NowPlaying #Facebook {
+        top: 30px;
+        left: 10px;
+        position:absolute;        
+    }
+    #NowPlaying #Twitter {
+        top: 50px;
+        left: 10px;
+        position:absolute;        
+    }
+
     #NowPlaying #Label1 {
         top: 300px;
         left: 0;
@@ -139,4 +155,8 @@ z-index:5
   ul
 {
     list-style-type: none;
+}
+
+  a {
+    color: white;
 }
