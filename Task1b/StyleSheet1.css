@@ -12,7 +12,7 @@
 }
 
  .content {
-     width:1200px;
+     width:1300px;
  }
 
   #background 
@@ -55,7 +55,9 @@ z-index:5
     display: inline-block;
     z-index:1;
   }
-
+  .box{
+      position: relative;
+  }
   #NowPlaying{
       position: relative;
   }
@@ -126,7 +128,7 @@ z-index:5
     margin: 10px 10px;
     background-color:rgba(0, 0, 0, 0.6);
     position: relative; 
-    width: 300px;
+    width: 400px;
       vertical-align: top;
     z-index:1;
     display: inline-block;
