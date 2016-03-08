@@ -10,11 +10,19 @@
 <body>
     <div class="content">
         <div id="Header">
-            <div id="Logotype"><img src="images/Logotype.png"></div>
+            <img src="images/Logotype.png" align="middle">
+            <img src="images/Shape6.png" align="middle">
+            <img src="images/Shape4.png" align="middle">
+            <img src="images/Shape5.png" align="middle">  
+            <input type=range> 
+            <i class="fa fa-volume-down"></i>
+            <button id="requestSong">Request Song</button>          
         </div>
         <div class="Column">
             <div class="box" id="NowPlaying">
-                <img src="images/Layer2.png">
+                <div id="img_box">
+                    <img src="images/Layer2.png">
+                </div>
                 <a href="">
                     <i id="MailIco" class="fa fa-envelope"></i>
                 </a>
@@ -27,10 +35,16 @@
                 <label id="Label1">Now plaing:</label>
                 <label id="Label2">The jimi Hendtrix Experience</label>
                 <label id="Label3">Long Hot Summer Night</label>
+                <a href="">
+                    <i id="Like" class="fa fa-thumbs-o-up fa-2x"></i>
+                </a>
+                <a href="">
+                    <i id="Dislike" class="fa fa-thumbs-o-down fa-2x"></i>
+                </a>
             </div>
             <div class="box">
                 <label id="Label">Recently Played</label>
-                <ul>
+                <ul class="itemList">
                     <li>
                         <img id="RecentlyBandPic" src="images/Layer5.png">
                         <p>
@@ -70,14 +84,14 @@
         <div class="Column">           
             <div class="box">
                 <label id="Label">Concerts</label>
-                <ul>
+                <ul class="itemList">
                     <li>
                         <img id="BandPic" src="images/Layer5.png">
                         <p>
                             <label id="Date">29.10.2014 8:49PM</label>
                             <label id="Band">Stynx</label>
                             <label id="Details">dsgfdsf fdgfd dfgdfg dfgdfg</label>
-                            <a href=""><a href=""><img id="More" src="images/More_1.png"></a></a>
+                            <a href="">More<i class="fa fa-play-circle-o"></i></a>
                         </p>
                     </li>
                     <li>
@@ -86,7 +100,7 @@
                             <label id="Date">29.10.2014 8:49PM</label>
                             <label id="Band">Stynx</label>
                             <label id="Details">dsgfdsf fdgfd dfgdfg dfgdfg</label>
-                            <a href=""><img id="More" src="images/More_1.png"></a>
+                            <a href="">More<i class="fa fa-play-circle-o"></i></a>
                         </p>
                     </li>
                     <li>
@@ -95,7 +109,7 @@
                             <label id="Date">29.10.2014 8:49PM</label>
                             <label id="Band">Stynx</label>
                             <label id="Details">dsgfdsf fdgfd dfgdfg dfgdfg</label>
-                            <a href=""><img id="More" src="images/More_1.png"></a>
+                            <a href="">More<i class="fa fa-play-circle-o"></i></a>
                         </p>
                     </li>
                 </ul>
@@ -103,14 +117,14 @@
             </div>
             <div class="box">
                 <label id="Label">Contests</label>
-                <ul>
+                <ul class="itemList">
                     <li>
                         <img id="BandPic" src="images/Layer5.png">
                         <p>
                             <label id="Date">29.10.2014 8:49PM</label>
                             <label id="Band">Stynx</label>
                             <label id="Details">dsgfdsf fdgfd dfgdfg dfgdfg</label>
-                            <a href=""><img id="More" src="images/More_1.png"></a>
+                            <a href="">More<i class="fa fa-play-circle-o"></i></a>
                         </p>
                     </li>
                     <li>
@@ -119,7 +133,7 @@
                             <label id="Date">29.10.2014 8:49PM</label>
                             <label id="Band">Stynx</label>
                             <label id="Details">dsgfdsf fdgfd dfgdfg dfgdfg</label>
-                            <a href=""><img id="More" src="images/More_1.png"></a>
+                            <a href="">More<i class="fa fa-play-circle-o"></i></a>
                         </p>
                     </li>
                     <li>
@@ -128,7 +142,7 @@
                             <label id="Date">29.10.2014 8:49PM</label>
                             <label id="Band">Stynx</label>
                             <label id="Details">dsgfdsf fdgfd dfgdfg dfgdfg</label>
-                            <a href=""><img id="More" src="images/More_1.png"></a>
+                            <a href="">More<i class="fa fa-play-circle-o"></i></a>
                         </p>
                     </li>
                 </ul>
@@ -140,52 +154,52 @@
             
             <div class="box">
                 <label id="Label">KFOX Links</label>
-                <ul>
+                <ul class="itemList">
                     <li>
                         <div>
                             <label id="KFOXLable">KFOX Blog</label>
-                            <a href=""><img id="Forward" src="images/forward.png"></a>
+                            <a href=""><i class="fa fa-play-circle-o"></i></a>
                         </div>
                     </li>
                     <li>
                         <div>
                             <label id="KFOXLable">KFOX Blog</label>
-                            <a href=""><img id="Forward" src="images/forward.png"></a>
+                            <a href=""><i class="fa fa-play-circle-o"></i></a>
                         </div>
                     </li>
                     <li>
                         <div>
                             <label id="KFOXLable">KFOX Blog</label>
-                            <a href=""><img id="Forward" src="images/forward.png"></a>
+                            <a href=""><i class="fa fa-play-circle-o"></i></a>
                         </div>
                     </li>
                 </ul>
             </div>
             <div class="box">
                 <label id="Label">Station Directory</label>
-                <ul>
+                <ul class="itemList">
                     <li>
                         <div>
                             <label id="StationDirectory">KFOX Blog</label>
-                            <a href=""><img id="Forward" src="images/forward.png"></a>
+                            <a href=""><i class="fa fa-play-circle-o"></i></a>
                         </div>
                     </li>
                     <li>
                         <div>
                             <label id="StationDirectory">KFOX Blog</label>
-                            <a href=""><img id="Forward" src="images/forward.png"></a>
+                            <a href=""><i class="fa fa-play-circle-o"></i></a>
                         </div>
                     </li>
                     <li>
                         <div>
                             <label id="StationDirectory">KFOX Blog</label>
-                            <a href=""><img id="Forward" src="images/forward.png"></a>
+                            <a href=""><i class="fa fa-play-circle-o"></i></a>
                         </div>
                     </li>
                     <li>
                         <div>
                             <label id="StationDirectory">KFOX Blog</label>
-                            <a href=""><img id="Forward" src="images/forward.png"></a>
+                            <a href=""><i class="fa fa-play-circle-o"></i></a>
                         </div>
                     </li>
                 </ul>
