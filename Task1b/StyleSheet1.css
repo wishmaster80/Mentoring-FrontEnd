@@ -3,6 +3,17 @@
 	padding: 0;
     display: inline-block;
  }
+ html { 
+  background: url(images/layer4.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+ .content {
+     width:1200px;
+ }
 
   #background 
 { 
@@ -110,12 +121,12 @@ z-index:5
     height:50px;    
     float:left;
     }
-  #Column
+  .Column
   {
     margin: 10px 10px;
     background-color:rgba(0, 0, 0, 0.6);
     position: relative; 
-    width: 400px;
+    width: 300px;
       vertical-align: top;
     z-index:1;
     display: inline-block;
