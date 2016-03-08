@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{759E18D0-11D6-42E3-BE8C-A94194233772}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjectFile1</RootNamespace>
+    <AssemblyName>ProjectFile1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Task1b\images\1029KBLX.png">
+      <Link>Task1\Images\1029KBLX.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\111220141017PM.png">
+      <Link>Task1\Images\111220141017PM.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\111220141054PM.png">
+      <Link>Task1\Images\111220141054PM.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\18112014639PM.png">
+      <Link>Task1\Images\18112014639PM.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\18112014639PM_0.png">
+      <Link>Task1\Images\18112014639PM_0.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\23122014937AM.png">
+      <Link>Task1\Images\23122014937AM.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\2839Sleek39IzakayaRo.png">
+      <Link>Task1\Images\2839Sleek39IzakayaRo.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\29102014849AM.png">
+      <Link>Task1\Images\29102014849AM.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\29102014849AM_0.png">
+      <Link>Task1\Images\29102014849AM_0.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\957TheGAME.png">
+      <Link>Task1\Images\957TheGAME.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\965KOIT.png">
+      <Link>Task1\Images\965KOIT.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\AdultContemporaryKOI.png">
+      <Link>Task1\Images\AdultContemporaryKOI.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Background.png">
+      <Link>Task1\Images\Background.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\BadtotheBone.png">
+      <Link>Task1\Images\BadtotheBone.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Calendar.png">
+      <Link>Task1\Images\Calendar.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Cinderella.png">
+      <Link>Task1\Images\Cinderella.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Circle.png">
+      <Link>Task1\Images\Circle.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\ConcertCalendar.png">
+      <Link>Task1\Images\ConcertCalendar.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Concerts.png">
+      <Link>Task1\Images\Concerts.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Contests.png">
+      <Link>Task1\Images\Contests.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Dislike.png">
+      <Link>Task1\Images\Dislike.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Don39tKnowWhatYouGot.png">
+      <Link>Task1\Images\Don39tKnowWhatYouGot.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Facebook.png">
+      <Link>Task1\Images\Facebook.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\FleetwoodMacOnWithTh.png">
+      <Link>Task1\Images\FleetwoodMacOnWithTh.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\forward.png">
+      <Link>Task1\Images\forward.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\forward_0.png">
+      <Link>Task1\Images\forward_0.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\forward_1.png">
+      <Link>Task1\Images\forward_1.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\forward_2.png">
+      <Link>Task1\Images\forward_2.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\forward_3.png">
+      <Link>Task1\Images\forward_3.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\forward_4.png">
+      <Link>Task1\Images\forward_4.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\forward_5.png">
+      <Link>Task1\Images\forward_5.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\forward_6.png">
+      <Link>Task1\Images\forward_6.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\forward_7.png">
+      <Link>Task1\Images\forward_7.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\FreeBeerFridayBuffal.png">
+      <Link>Task1\Images\FreeBeerFridayBuffal.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\FreeBird.png">
+      <Link>Task1\Images\FreeBird.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\FridayMarch13th2015T.png">
+      <Link>Task1\Images\FridayMarch13th2015T.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\GeorgeThorogoodtheDe.png">
+      <Link>Task1\Images\GeorgeThorogoodtheDe.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\GetMyPERKS.png">
+      <Link>Task1\Images\GetMyPERKS.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\GetreadyforFreeBeerF.png">
+      <Link>Task1\Images\GetreadyforFreeBeerF.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\GunsN39Roses.png">
+      <Link>Task1\Images\GunsN39Roses.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\HalfOffWinterDetaili.png">
+      <Link>Task1\Images\HalfOffWinterDetaili.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\HotACKRBQFM.png">
+      <Link>Task1\Images\HotACKRBQFM.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Icontouch.png">
+      <Link>Task1\Images\Icontouch.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\KFOXBlog.png">
+      <Link>Task1\Images\KFOXBlog.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\KFOXLinks.png">
+      <Link>Task1\Images\KFOXLinks.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Layer10.png">
+      <Link>Task1\Images\Layer10.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Layer11.png">
+      <Link>Task1\Images\Layer11.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Layer12.png">
+      <Link>Task1\Images\Layer12.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Layer13.png">
+      <Link>Task1\Images\Layer13.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Layer14.png">
+      <Link>Task1\Images\Layer14.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Layer15.png">
+      <Link>Task1\Images\Layer15.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Layer16.png">
+      <Link>Task1\Images\Layer16.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Layer17.png">
+      <Link>Task1\Images\Layer17.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Layer18.png">
+      <Link>Task1\Images\Layer18.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Layer2.png">
+      <Link>Task1\Images\Layer2.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Layer4.png">
+      <Link>Task1\Images\Layer4.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Layer5.png">
+      <Link>Task1\Images\Layer5.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Layer6.png">
+      <Link>Task1\Images\Layer6.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Layer7.png">
+      <Link>Task1\Images\Layer7.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Layer8.png">
+      <Link>Task1\Images\Layer8.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Layer9.png">
+      <Link>Task1\Images\Layer9.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\layer_434.png">
+      <Link>Task1\Images\layer_434.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\layer_531.png">
+      <Link>Task1\Images\layer_531.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\layer_615.png">
+      <Link>Task1\Images\layer_615.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\layer_622.png">
+      <Link>Task1\Images\layer_622.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\layer_731.png">
+      <Link>Task1\Images\layer_731.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\layer_811.png">
+      <Link>Task1\Images\layer_811.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\layer_936.png">
+      <Link>Task1\Images\layer_936.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\LedZeppelin.png">
+      <Link>Task1\Images\LedZeppelin.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Like.png">
+      <Link>Task1\Images\Like.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\ListentoChrisJackson.png">
+      <Link>Task1\Images\ListentoChrisJackson.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Logotype.png">
+      <Link>Task1\Images\Logotype.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\LongHotSummerNight.png">
+      <Link>Task1\Images\LongHotSummerNight.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\LynyrdSkynyrd.png">
+      <Link>Task1\Images\LynyrdSkynyrd.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\More.png">
+      <Link>Task1\Images\More.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\More_0.png">
+      <Link>Task1\Images\More_0.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\More_1.png">
+      <Link>Task1\Images\More_1.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\More_2.png">
+      <Link>Task1\Images\More_2.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\More_3.png">
+      <Link>Task1\Images\More_3.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\More_4.png">
+      <Link>Task1\Images\More_4.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\More_5.png">
+      <Link>Task1\Images\More_5.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Nowplaying.png">
+      <Link>Task1\Images\Nowplaying.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\OurWinterBlitzdetail.png">
+      <Link>Task1\Images\OurWinterBlitzdetail.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Patience.png">
+      <Link>Task1\Images\Patience.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\progress.png">
+      <Link>Task1\Images\progress.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Q102.png">
+      <Link>Task1\Images\Q102.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\rail.png">
+      <Link>Task1\Images\rail.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\RBKBLXFM.png">
+      <Link>Task1\Images\RBKBLXFM.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\RecentlyPlayed.png">
+      <Link>Task1\Images\RecentlyPlayed.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle1.png">
+      <Link>Task1\Images\Rectangle1.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle2.png">
+      <Link>Task1\Images\Rectangle2.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle3.png">
+      <Link>Task1\Images\Rectangle3.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle3_0.png">
+      <Link>Task1\Images\Rectangle3_0.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle3_1.png">
+      <Link>Task1\Images\Rectangle3_1.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle3_2.png">
+      <Link>Task1\Images\Rectangle3_2.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle3_3.png">
+      <Link>Task1\Images\Rectangle3_3.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle3_4.png">
+      <Link>Task1\Images\Rectangle3_4.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle4.png">
+      <Link>Task1\Images\Rectangle4.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle4_0.png">
+      <Link>Task1\Images\Rectangle4_0.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle4_1.png">
+      <Link>Task1\Images\Rectangle4_1.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle4_10.png">
+      <Link>Task1\Images\Rectangle4_10.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle4_11.png">
+      <Link>Task1\Images\Rectangle4_11.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle4_12.png">
+      <Link>Task1\Images\Rectangle4_12.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle4_2.png">
+      <Link>Task1\Images\Rectangle4_2.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle4_3.png">
+      <Link>Task1\Images\Rectangle4_3.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle4_4.png">
+      <Link>Task1\Images\Rectangle4_4.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle4_5.png">
+      <Link>Task1\Images\Rectangle4_5.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle4_6.png">
+      <Link>Task1\Images\Rectangle4_6.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle4_7.png">
+      <Link>Task1\Images\Rectangle4_7.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle4_8.png">
+      <Link>Task1\Images\Rectangle4_8.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Rectangle4_9.png">
+      <Link>Task1\Images\Rectangle4_9.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\RequestaSong.png">
+      <Link>Task1\Images\RequestaSong.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\RingoStarrandHisAllS.png">
+      <Link>Task1\Images\RingoStarrandHisAllS.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\RoundedRectangle1.png">
+      <Link>Task1\Images\RoundedRectangle1.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\RoundedRectangle3cop.png">
+      <Link>Task1\Images\RoundedRectangle3cop.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\SanFranciscoOaklandS.png">
+      <Link>Task1\Images\SanFranciscoOaklandS.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\SanFranciscoOaklandS_0.png">
+      <Link>Task1\Images\SanFranciscoOaklandS_0.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\SanFranciscoOaklandS_1.png">
+      <Link>Task1\Images\SanFranciscoOaklandS_1.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\SanFranciscoOaklandS_2.png">
+      <Link>Task1\Images\SanFranciscoOaklandS_2.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Shape1.png">
+      <Link>Task1\Images\Shape1.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Shape2.png">
+      <Link>Task1\Images\Shape2.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Shape3.png">
+      <Link>Task1\Images\Shape3.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Shape4.png">
+      <Link>Task1\Images\Shape4.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Shape5.png">
+      <Link>Task1\Images\Shape5.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Shape6.png">
+      <Link>Task1\Images\Shape6.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\SportsKGMZFM.png">
+      <Link>Task1\Images\SportsKGMZFM.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\StairwaytoHeaven.png">
+      <Link>Task1\Images\StairwaytoHeaven.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\StationDirectory.png">
+      <Link>Task1\Images\StationDirectory.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Styx.png">
+      <Link>Task1\Images\Styx.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\TheJimiHendrixExperi.png">
+      <Link>Task1\Images\TheJimiHendrixExperi.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\TheRollingStones.png">
+      <Link>Task1\Images\TheRollingStones.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\TheWho.png">
+      <Link>Task1\Images\TheWho.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\TuesdayApril7thOracl.png">
+      <Link>Task1\Images\TuesdayApril7thOracl.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Twitter.png">
+      <Link>Task1\Images\Twitter.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\WednesdayJanuary28th.png">
+      <Link>Task1\Images\WednesdayJanuary28th.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\WinKuriosticketswith.png">
+      <Link>Task1\Images\WinKuriosticketswith.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\Won39tGetFooledAgain.png">
+      <Link>Task1\Images\Won39tGetFooledAgain.png</Link>
+    </Content>
+    <Content Include="..\Task1b\images\YouCan39tAlwaysGetWh.png">
+      <Link>Task1\Images\YouCan39tAlwaysGetWh.png</Link>
+    </Content>
+    <Content Include="..\Task1b\index.html">
+      <Link>Task1\index.html</Link>
+    </Content>
+    <Content Include="..\Task1b\links.txt">
+      <Link>Task1\links.txt</Link>
+    </Content>
+    <Content Include="..\Task1b\StyleSheet1.css">
+      <Link>Task1\StyleSheet1.css</Link>
+    </Content>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49263</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49263/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
