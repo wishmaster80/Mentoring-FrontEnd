@@ -40,7 +40,7 @@
     float: right;
     
 }
-#Header {
+.Header {
     display: inline-block;
 background: -webkit-linear-gradient(90deg, #ffffff 0%, #000000 100%);
 background: -moz-linear-gradient(90deg, #ffffff 0%, #000000 100%);
@@ -167,15 +167,18 @@ z-index:5
     margin: 10px 10px;
     background-color:rgba(0, 0, 0, 0.6);
     position: relative; 
-    width: 400px;
+    width: 450px;
       vertical-align: top;
     z-index:1;
     display: inline-block;
     color:white;    
   }
-#BandPic{
-    width:100px;
-    height:100px;
+  .LastColumn{
+      width:250px;
+  }
+.BandPic{
+    width:114px;
+    height:114px;
     
     float:left;
     }
