@@ -63,8 +63,7 @@ z-index:5
       position: relative;
       margin: 10px;
   }
-  .itemList{
-
+  .itemList{      
   }
   #NowPlaying{      
       width: 450px;
@@ -159,8 +158,8 @@ z-index:5
     color:white;
   }
 #RecentlyBandPic{
-    width:50px;
-    height:50px;    
+    width:75px;
+    height:75px;    
     float:left;
     }
   .Column
@@ -193,7 +192,7 @@ z-index:5
     line-height: 12px;/* Przybli¿enie (wynika z podstawienia czcionki) */
     text-align: left;    
   }
-  h2{
+  h2{     
     font-family: ClearSans;
     color: #ffffff;
     font-size: 14px; /* Przybli¿enie (wynika z podstawienia czcionki) */
@@ -257,6 +256,20 @@ z-index:5
        width:250px;
        padding:10px 0px 10px 0px;
   }
-    #Forward {
+    .floatRight {
     float: right;
+    }
+
+    .Stop{
+           position: relative;
+           top: 0px;
+        left: 15px;
+        z-index:4;
+    }
+    .Play{
+           position: relative;
+    }
+    .Fastplay{
+           position: relative;
+           left:-15px;
     }
