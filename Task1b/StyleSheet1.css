@@ -193,6 +193,30 @@ z-index:5
     line-height: 12px;/* Przybli¿enie (wynika z podstawienia czcionki) */
     text-align: left;    
   }
+  h2{
+    font-family: ClearSans;
+    color: #ffffff;
+    font-size: 14px; /* Przybli¿enie (wynika z podstawienia czcionki) */
+    font-weight: 400;
+    line-height: 12px; /* Przybli¿enie (wynika z podstawienia czcionki) */
+    text-align: left;
+  }
+  h3{
+    font-family: ClearSans;
+    color: #ffffff;
+    font-size: 18px; /* Przybli¿enie (wynika z podstawienia czcionki) */
+    font-weight: 300;
+    line-height: 12px; /* Przybli¿enie (wynika z podstawienia czcionki) */
+    text-align: left;
+  }
+  h4{
+    font-family: ClearSans;
+    color: #999999;
+    font-size: 11px; /* Przybli¿enie (wynika z podstawienia czcionki) */
+    font-weight: 300;
+    line-height: 12px; /* Przybli¿enie (wynika z podstawienia czcionki) */
+    text-align: left;
+  }
   #Column ul li{
       width:380px;
       display: inline-block;
