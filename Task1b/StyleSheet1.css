@@ -29,7 +29,7 @@
 	 z-index:-1;
      background-color:black;    
 } 
-#requestSong{
+.requestSong{
     background: -webkit-linear-gradient(90deg, #ffc603 0%, #fde645 100%);
     background: -moz-linear-gradient(90deg, #ffc603 0%, #fde645 100%);
     background: -o-linear-gradient(90deg, #ffc603 0%, #fde645 100%);
@@ -75,9 +75,9 @@ z-index:5
       
   }
 
-  #img_box{
- width:90%;
- height:90%;
+.img_box{
+    width:90%;
+    height:90%;
 }
 
     #NowPlaying label  {
@@ -129,7 +129,7 @@ z-index:5
         text-align: left;
     }
     #NowPlaying #Label2 {
-        bottom: 40px;
+        bottom: 42px;
 
         font-family: ClearSans;
         color: #ffffff;
@@ -157,7 +157,7 @@ z-index:5
     display: inline-block;
     color:white;
   }
-#RecentlyBandPic{
+.RecentlyBandPic{
     width:75px;
     height:75px;    
     float:left;
