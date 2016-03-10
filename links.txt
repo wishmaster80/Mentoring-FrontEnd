@@ -3,3 +3,7 @@ https://epam-my.sharepoint.com/personal/aliaksandr_orgish_epam_com/_layouts/15/o
 https://docs.google.com/spreadsheets/d/1HHc921rtZQLTIiHbl-a8Yni9aJ2XiaqjTSkZW20JX_Y/edit#gid=1793640086
 http://mykytamorachov.github.io/css-basics/css-basics.html#32
 https://kb.epam.com/display/EPMCDPSITE/FE+Mentoring+PL
+
+https://oleksiipotiekhin.github.io/kfox/dist/index.html
+
+https://github.com/oleksiipotiekhin/kfox
