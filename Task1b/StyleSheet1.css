@@ -45,7 +45,7 @@ background: -moz-linear-gradient(90deg, #ffffff 0%, #000000 100%);
 background: -o-linear-gradient(90deg, #ffffff 0%, #000000 100%);
 background: -ms-linear-gradient(90deg, #ffffff 0%, #000000 100%);
 background: linear-gradient(0deg, #ffffff 0%, #000000 100%);*/
-width: 1300px;
+width: 1250px;
 height: 96px;
 
 z-index:5
@@ -59,10 +59,9 @@ z-index:5
 
   .box{
       position: relative;
-      margin: 10px;
+      margin: 2px;
   }
-  .itemList{      
-  }
+  
   #NowPlaying{      
       width: 450px;
       height: 450px;
@@ -162,11 +161,11 @@ z-index:5
     }
   .Column
   {
-    margin: 10px 10px;
+    margin: 2px 2px;
     background-color:rgba(0, 0, 0, 0.6);
     position: relative; 
-    width: 450px;
-      vertical-align: top;
+    width: 500px;
+    vertical-align: top;
     z-index:1;
     display: inline-block;
     color:white;    
@@ -174,11 +173,15 @@ z-index:5
   .LastColumn{
       width:250px;
   }
+  .LastColumn ul li div{
+      vertical-align: middle;       
+  }
+  .LastColumn ul li div a{
+    float:right;
+  }
 .BandPic{
     width:114px;
-    height:114px;
-    
-    float:left;
+    height:114px;        
     }
  #More{
      width: 57px;
@@ -186,7 +189,7 @@ z-index:5
  }
   h1{
     font-family: ClearSans;
-    margin:10px 10px;
+    margin:2px 2px;
     color:#d98000;
     font-size: 22px;/* Przybli¿enie (wynika z podstawienia czcionki) */
     font-weight: 100;
@@ -233,6 +236,7 @@ z-index:5
     list-style-type: none;
 }
 
+
   a {
     color: white;
 }
@@ -255,7 +259,7 @@ z-index:5
 
   ul li div{
        width:250px;
-       padding:10px 0px 10px 0px;
+       padding:2px 0px 10px 0px;
   }
     .floatRight {
     float: right;
@@ -267,10 +271,25 @@ z-index:5
         left: 15px;
         z-index:4;
     }
-    .Play{
+    .PlaySong{
            position: relative;
     }
     .Fastplay{
            position: relative;
            left:-15px;
     }
+
+        .floating-box {            
+            max-width: 114px;                        
+        }
+
+        .floating-box2 {            
+            width: 150px;                        
+        }
+     .itemList div {      
+      display: inline-block;
+      vertical-align: top; 
+  }
+.Play {
+    width:20px; 
+}
