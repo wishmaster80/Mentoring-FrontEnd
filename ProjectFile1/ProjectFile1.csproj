@@ -480,6 +480,9 @@
     <Content Include="..\Task1b\StyleSheet1.css">
       <Link>Task1\StyleSheet1.css</Link>
     </Content>
+    <Content Include="..\test.html">
+      <Link>test.html</Link>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

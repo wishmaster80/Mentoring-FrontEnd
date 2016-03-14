@@ -30,7 +30,12 @@
      background-color:black;    
 } 
 .requestSong{
-    background: linear-gradient(0deg,#ffc603 0,#fde645 100%);
+    background: linear-gradient(0deg,#ffc603 0,#fde645 100%);    
+    background: -moz-linear-gradient(0deg,#ffc603 0,#fde645 100%);
+    background: -webkit-linear-gradient(0deg,#ffc603 0,#fde645 100%);
+    background: -o-linear-gradient(0deg,#ffc603 0,#fde645 100%);
+    background: -ms-linear-gradient(0deg,#ffc603 0,#fde645 100%);/*For IE10*/
+    
     border-radius: 25px;
     color: #333;
     font-size: 18px;
@@ -61,7 +66,7 @@ z-index:5
       position: relative;
       margin: 2px;
   }
-  
+
   #NowPlaying{      
       width: 450px;
       height: 450px;
@@ -234,6 +239,7 @@ z-index:5
   ul
 {
     list-style-type: none;
+    padding: 5% 5% 5% 3%;
 }
 
 
@@ -292,4 +298,26 @@ z-index:5
   }
 .Play {
     width:20px; 
+}
+a[href*="html"] {
+    color:yellow
+}
+
+.fa-play-circle-o:hover{
+    color:red;
+}
+
+ul li:nth-child(2n)
+{
+    background-color:rgba(10, 10, 10, 0.7);
+}
+
+ul li:nth-child(2n+1)
+{
+    background-color:rgba(10, 10, 10, 0.1);
+}
+
+
+* {
+  box-sizing: border-box;
 }
