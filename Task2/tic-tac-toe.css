@@ -8,7 +8,13 @@
 .game{
     width:450px;
     height:450px;
-
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:30em;
+    height:18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
 }
 
 .board{
@@ -41,15 +47,29 @@
     border-left-style: solid;
 }
 
-.x{
-    background: url(tic-tac-toe-X.png);
+.xRed{
+    background: url(tic-tac-toe-X-Red.png);
     background-size:100px;
     background-repeat:no-repeat;
     background-position:center
 }
 
-.o{
-    background: url(tic-tac-toe-O.png);
+.oRed{
+    background: url(tic-tac-toe-O-Red.png);
+    background-size:100px;
+    background-repeat:no-repeat;
+    background-position:center
+}
+
+.xGreen{
+    background: url(tic-tac-toe-X-green.png);
+    background-size:100px;
+    background-repeat:no-repeat;
+    background-position:center
+}
+
+.oGreen{
+    background: url(tic-tac-toe-O-green.png);
     background-size:100px;
     background-repeat:no-repeat;
     background-position:center

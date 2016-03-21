@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+<head>    
     <meta charset="utf-8" />
     <title>tic-tac-toe</title>
     <link rel="stylesheet" type="text/css" href="tic-tac-toe.css">
@@ -10,16 +9,17 @@
 <body>
     <div class="game">
         <div class="board">
-            <div class="square top left x"><div></div></div>
-            <div class="square top o"><div></div></div>
-            <div class="square top right"><div></div></div>
-            <div class="square left"><div></div></div>
-            <div class="square"><div></div></div>
-            <div class="square right"><div></div></div>
-            <div class="square bottom left"><div></div></div>
-            <div class="square bottom"><div></div></div>
-            <div class="square bottom right"><div></div></div>
+            <div class="square top left" onclick="click"><div></div></div>
+            <div class="square top middle" onclick="click"><div></div></div>
+            <div class="square top right" onclick="click"><div></div></div>
+            <div class="square left" onclick="click"><div></div></div>
+            <div class="square middle" onclick="click"><div></div></div>
+            <div class="square right" onclick="click"><div></div></div>
+            <div class="square bottom left" onclick="click"><div></div></div>
+            <div class="square bottom middle" onclick="click"><div></div></div>
+            <div class="square bottom right" onclick="click"><div></div></div>
         </div>
     </div>
     <script src="tic-tac-toe.js"></script>
 </body>
+</html>
