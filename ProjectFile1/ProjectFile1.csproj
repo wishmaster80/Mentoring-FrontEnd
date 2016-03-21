@@ -480,6 +480,15 @@
     <Content Include="..\Task1b\StyleSheet1.css">
       <Link>Task1\StyleSheet1.css</Link>
     </Content>
+    <Content Include="..\Task2\tic-tac-toe.css">
+      <Link>Task2\tic-tac-toe.css</Link>
+    </Content>
+    <Content Include="..\Task2\tic-tac-toe.html">
+      <Link>Task2\tic-tac-toe.html</Link>
+    </Content>
+    <Content Include="..\Task2\tic-tac-toe.js">
+      <Link>Task2\tic-tac-toe.js</Link>
+    </Content>
     <Content Include="..\test.html">
       <Link>test.html</Link>
     </Content>
