@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>    
@@ -8,17 +8,21 @@
 </head>
 <body>
     <div class="game">
+        <div class="score">x<span id="scoreX">0</span>-<span id="scoreO">0</span>o
+        </div>
         <div class="board">
             <div class="square top left" onclick="click"><div></div></div>
             <div class="square top middle" onclick="click"><div></div></div>
             <div class="square top right" onclick="click"><div></div></div>
-            <div class="square left" onclick="click"><div></div></div>
-            <div class="square middle" onclick="click"><div></div></div>
-            <div class="square right" onclick="click"><div></div></div>
+            <div class="square middleH left" onclick="click"><div></div></div>
+            <div class="square middleH middle" onclick="click"><div></div></div>
+            <div class="square middleH right" onclick="click"><div></div></div>
             <div class="square bottom left" onclick="click"><div></div></div>
             <div class="square bottom middle" onclick="click"><div></div></div>
             <div class="square bottom right" onclick="click"><div></div></div>
         </div>
+        <button onclick="nextGame()">Next</button>
+        <button onclick="resetGame()">Reset</button>
     </div>
     <script src="tic-tac-toe.js"></script>
 </body>

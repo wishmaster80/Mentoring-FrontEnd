@@ -1,44 +1,52 @@
 ﻿var classname = document.getElementsByClassName("square");
-var nextTurn = 'X';
-function AddClass(obj, className) {
-    obj.className += (" " + className);
-    
+var nextTurn = 'x';
+var xScore = 0;
+var oScore = 0;
+
+function hasClass(ele,cls) {
+    return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
 }
-function ContainsClass(obj, className) {
-    //console.log(obj.className + "|" + classname + "|" + obj.className.indexOf(className));
-    if (obj.className.indexOf(className) >= 0) {
-        return true;
+function addClass(ele,cls) {
+    if (!this.hasClass(ele,cls)) ele.className += " "+cls;
+}
+function removeClass(ele,cls) {
+    if (hasClass(ele,cls)) {
+        var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
+        ele.className=ele.className.replace(reg,' ');
     }
-    return false;
+}
+function switchClass(ele, oldCls, newCls) {    
+    removeClass(ele, oldCls);
+    addClass(ele, newCls);
 }
 
 function IsNotBlank(obj) {
-    if (ContainsClass(obj, "xGreen")  ||
-    ContainsClass(obj,"oGreen"))
+    if (hasClass(obj, "xGreen") ||
+    hasClass(obj, "oGreen"))
         return true;
 
     return false;
 }
 
 function ChangeNextTurn() {
-    if (nextTurn == 'O') {
-        nextTurn = 'X';
+    if (nextTurn == 'o') {
+        nextTurn = 'x';
     }
     else {
-        nextTurn = 'O';
+        nextTurn = 'o';
     }
 }
 var wining = [
                 ["square top left", "square top middle", "square top right"],
-                ["square left", "square middle", "square right"],
+                ["square middleH left", "square middleH middle", "square middleH right"],
                 ["square bottom left", "square bottom middle", "square bottom right"],
 
-                ["square top left", "square middle", "square bottom right"],
-                ["square bottom left", "square middle", "square top right"],                
+                ["square top left", "square middleH middle", "square bottom right"],
+                ["square bottom left", "square middleH middle", "square top right"],
 
-                ["square top left", "square left", "square bottom left"],
-                ["square top middle", "square middle", "square bottom middle"],
-                ["square top right", "square right", "square bottom right"],
+                ["square top left", "square middleH left", "square bottom left"],
+                ["square top middle", "square middleH middle", "square bottom middle"],
+                ["square top right", "square middleH right", "square bottom right"],
             ];
 
 function ChceckPlayer(clicked) {
@@ -46,28 +54,44 @@ function ChceckPlayer(clicked) {
     for (var j = 0; j < wining.length; j++) {        
         var hits = 0;
         for (var k = 0; k < wining[j].length; k++) {            
-            for (var i = 0; i < clicked.length; i++) {                
-                console.log(i + " :" + clicked[i].className + " hits:" + hits + wining[j][k] + ":" + clicked[i].className.indexOf(wining[j][k]));
-                if (ContainsClass(clicked[i], wining[j][k])) {                
+            for (var i = 0; i < clicked.length; i++) {                                
+                if (hasClass(clicked[i], wining[j][k])) {                
                     hits = hits +1;                    
-                }                
+                }
+                if (hits == 3) {
+                    Won(clicked[i], wining[j]);
+                }
             }
-            if (hits == 3) {                
-                alert("WIN");
-            }
+            
         }
     }    
 }
-function CheckScore() {
-    console.log("CheckScore");
+function Won(won, winingRow) {
+    DisableClick();    
+    for (var i = 0; i < winingRow.length; i++) {        
+        var element = document.getElementsByClassName(winingRow[i])[0];            
+        switchClass(element, nextTurn + 'Green', nextTurn + 'Red');
+    }
+    if (nextTurn == 'x') {
+        xScore = xScore +1;
+        document.getElementById("scoreX").innerHTML = xScore;
+        
+    } else {
+        oScore = oScore +1;
+        document.getElementById("scoreO").innerHTML = oScore;
+    }
+
+}
+
+function CheckScore() {    
     var x = [];
     var o = [];
     for (var i = 0; i < classname.length; i++) {        
         var square = classname[i];        
-        if(ContainsClass(square, "oGreen")){
+        if(hasClass(square, "oGreen")){
             o.push(square);
         }
-        if (ContainsClass(square, "xGreen")) {
+        if (hasClass(square, "xGreen")) {
             x.push(square);
         }
     }
@@ -79,22 +103,47 @@ function CheckScore() {
 var myFunction = function () {        
     if (IsNotBlank(this) == true)
         return;    
-    if (nextTurn == 'X') {
-        AddClass(this, "xGreen");
+    if (nextTurn == 'x') {
+        addClass(this, "xGreen");
         
     } else {
-        AddClass(this, "oGreen");        
-    }
-    console.log("myFunctiopn");
-    ChangeNextTurn();
+        addClass(this, "oGreen");        
+    }        
     CheckScore();
+    ChangeNextTurn();
 };
 
-
-window.onload = function () {
+function EnableClick(){
     for (var i = 0; i < classname.length; i++) {
         classname[i].addEventListener('click', myFunction, false);
     }
+}
+function DisableClick() {
+    for (var i = 0; i < classname.length; i++) {
+        classname[i].removeEventListener('click', myFunction, false);
+    }
+}
+function nextGame() {    
+    EnableClick();
+    ResetStyle();
+}
+function ResetStyle() {
+    for (var i = 0; i < classname.length; i++) {
+        console.log(classname[i]);
+        removeClass(classname[i], 'xRed');
+        removeClass(classname[i], 'oRed');
+        removeClass(classname[i], 'xGreen');
+        removeClass(classname[i], 'oGreen');
+    }
+}
+function resetGame() {
+    document.getElementById("scoreO").innerHTML = 0;
+    document.getElementById("scoreX").innerHTML = 0;
+    EnableClick();
+}
+
+window.onload = function () {
+    EnableClick();
 }
 
 

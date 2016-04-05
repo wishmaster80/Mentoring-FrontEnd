@@ -72,3 +72,13 @@
     background-repeat:no-repeat;
     background-position:center
 }
+.score{
+    font-size:120px;
+    text-align:center;
+}
+.score .red{
+    color:red;
+}
+.score .green{
+    color:green;
+}
