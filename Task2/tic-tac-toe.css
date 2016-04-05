@@ -6,8 +6,6 @@
 }
 
 .game{
-    width:450px;
-    height:450px;
     position:fixed;
     top: 50%;
     left: 50%;
@@ -49,28 +47,28 @@
 
 .xRed{
     background: url(tic-tac-toe-X-Red.png);
-    background-size:100px;
+    background-size:50%;    
     background-repeat:no-repeat;
     background-position:center
 }
 
 .oRed{
     background: url(tic-tac-toe-O-Red.png);
-    background-size:100px;
+    background-size:50%;
     background-repeat:no-repeat;
     background-position:center
 }
 
 .xGreen{
     background: url(tic-tac-toe-X-green.png);
-    background-size:100px;
+    background-size:50%;
     background-repeat:no-repeat;
     background-position:center
 }
 
 .oGreen{
     background: url(tic-tac-toe-O-green.png);
-    background-size:100px;
+    background-size:50%;
     background-repeat:no-repeat;
     background-position:center
 }
