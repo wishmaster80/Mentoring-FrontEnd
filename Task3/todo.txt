@@ -1,0 +1,11 @@
+[13.04.2016 17:31:27] Szymon Banaœ: zadanie od jutra dotyczy HTTP. Networking. Headers. Caching. ETag. Mime types. Compression.
+https://epam-my.sharepoint.com/personal/aliaksandr_orgish_epam_com/Documents/FrontEnd%20Mentoring%20Program/3%20Networking/1%20HTTP/Assignment.txt
+[13.04.2016 17:32:07] Szymon Banaœ: y pomy³ka z mojej strony - ten networking powinien byæ dzisiaj skoñczony o_O
+[13.04.2016 17:32:39] Szymon Banaœ: i kolejne zadanie od dzisiaj to AJAX. Promises. CORS. Long polling. PAJAX. WebSockets.
+https://epam-my.sharepoint.com/personal/aliaksandr_orgish_epam_com/Documents/FrontEnd%20Mentoring%20Program/3%20Networking/2%20AJAX.%20Promises.%20CORS/Assignment.txt
+[13.04.2016 17:33:09] Szymon Banaœ: Implement your own dropbox-client (library) for basic operations with files (get dirs/files list, get file content)
+[13.04.2016 17:33:43] Szymon Banaœ: spojrzê wieczór na to opóŸnione zadanie
+[13.04.2016 17:34:04] Szymon Banaœ: ¿eby coœ pomóc nadgoniæ
+[13.04.2016 17:39:47] Szymon Banaœ: OK ostatnie zadanie nie powinno zaj¹æ Ci du¿o czasu - u¿yj zak³adki Networking w narzêdziach do debugowania Chrome
+[13.04.2016 17:39:59] Szymon Banaœ: tzn to z networking
+[13.04.2016 17:40:22] Szymon Banaœ: tam s¹ wszystkie potrzebne informacje
