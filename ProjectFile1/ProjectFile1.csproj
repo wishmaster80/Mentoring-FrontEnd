@@ -64,6 +64,12 @@
     <Content Include="..\DropBox\DropBox.js">
       <Link>DropBox\DropBox.js</Link>
     </Content>
+    <Content Include="..\Promise\Promise.html">
+      <Link>Promise\Promise.html</Link>
+    </Content>
+    <Content Include="..\Promise\Promise.js">
+      <Link>Promise\Promise.js</Link>
+    </Content>
     <Content Include="..\Task1b\images\1029KBLX.png">
       <Link>Task1\Images\1029KBLX.png</Link>
     </Content>
