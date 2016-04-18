@@ -6,7 +6,8 @@
 
 function Submit()
 {
-    var client = new Dropbox.Client({ key: "beZcac5_WFAAAAAAAAAAF4F2o8-Q1RqU6ZiFKYnrEpgeETTTbFhpdqBuyWjf_aNV" });
+    var client = new Dropbox.Client({ key: "r4vdwcjpvu6hn1y" });
+    client.authenticate();
     if (client.isAuthenticated()) { console.log(":)"); }
     else {
         console.log(":(");
