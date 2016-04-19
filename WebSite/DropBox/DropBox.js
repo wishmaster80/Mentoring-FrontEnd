@@ -1,5 +1,6 @@
 ﻿var client = new Dropbox.Client({ key: "r4vdwcjpvu6hn1y" });
-
+var fileContent;
+var fileName;
 function Authorize() {
     return new Promise(function (resolve, reject) {
         client.authenticate();
@@ -14,9 +15,8 @@ function Authorize() {
 }
 
 function Upload() {
-    return new Promise(function (resolve, reject) {
-        
-        client.writeFile('hello.txt', 'Hello, World!', function () {
+    return new Promise(function (resolve, reject) {        
+        client.writeFile(fileName, fileContent, function () {
             console.log('File written!');
             resolve();
         });        
@@ -24,13 +24,43 @@ function Upload() {
     )
 }
 
+function displayContents(contents) {
+    //var element = document.getElementById('file-content');
+    //element.innerHTML = contents;
+
+    var arrayBufferView = new Uint8Array(contents);
+    var blob = new Blob([arrayBufferView], { type: "image/jpeg" });
+    var urlCreator = window.URL || window.webkitURL;
+    var imageUrl = urlCreator.createObjectURL(blob);
+    var img = document.querySelector("#photo");
+    img.src = imageUrl;
+
+}
+
+function readSingleFile(e) {    
+    var file = e.target.files[0];
+    
+    if (!file) {
+        return;
+    }
+    fileName = file.name;
+    var reader = new FileReader();
+    reader.onload = function (e) {
+        var contents = e.target.result;        
+        fileContent = contents;        
+    };
+    reader.readAsArrayBuffer(file);
+}
+
+document.getElementById('file-input')
+  .addEventListener('change', readSingleFile, false);
 
 function Download() {
     return new Promise(function (resolve, reject) {
 
-        client.readFile('hello.txt', { arrayBuffer: true }, function (error, contents) {            
+        client.readFile(fileName, { arrayBuffer: true }, function (error, contents) {
             console.log((contents));
-            saveAs(contents, 'encode_file');
+            displayContents(contents);
         });
     }
     )
