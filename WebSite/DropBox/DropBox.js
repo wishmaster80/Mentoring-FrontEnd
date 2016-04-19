@@ -2,37 +2,34 @@
 {
     return true;
 }
+var client = new Dropbox.Client({ key: "r4vdwcjpvu6hn1y" });
+
+var promise = new Promise(function(resolve, reject) {
+      client.authenticate();
+    if (client.isAuthenticated()) {
+      resolve("Dział!");
+    }
+    else {
+    reject(Error("Nie działa :v"));
+}
+});
 
 
 function Submit()
 {
-    var client = new Dropbox.Client({ key: "r4vdwcjpvu6hn1y" });
-    client.authenticate();
-    if (client.isAuthenticated()) {
-       // console.log(":)");
-        //client.writeFile('hello.txt', 'Hello, World!', function () {
-        //    alert('File written!');
-        //});
-        
-        var datastoreManager = client.getDatastoreManager();
-        var datastore = null;
-        var selectedDsid = null;
-
-        var previousList = [];
-        datastoreManager.datastoreListChanged.addListener(function (e) {
-            var infos = e.getDatastoreInfos();
-            console.log(infos);
-        });
-
-
-    }
-    else {
-        console.log(":(");
-    }
     
-    //Authorize().then(function (ret) {
-    //    alert(ret);
-    //});
+    //client.authenticate();
+    //if (client.isAuthenticated()) {
+    //   console.log(":)");
+    //}
+    //else {
+    //    console.log(":(");
+    //}
+    promise.then(function (result) {
+        console.log(result); // "Działa!"
+    }, function (err) {
+        console.error(err); // Error: "Nie działa :v"
+    });
 }
 
 function readFile(filename, enc) {
