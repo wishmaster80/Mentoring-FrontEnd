@@ -24,12 +24,13 @@ function Upload() {
     )
 }
 
+
 function Download() {
     return new Promise(function (resolve, reject) {
 
-        client.readFile('hell2o.txt', null, function () {
-            console.log('File readed!');
-            resolve();
+        client.readFile('hello.txt', { arrayBuffer: true }, function (error, contents) {            
+            console.log((contents));
+            saveAs(contents, 'encode_file');
         });
     }
     )
@@ -45,12 +46,14 @@ function Submit()
         console.log('Nie działa :v');
     });
     console.log('End!');
+}
 
+function DownloadFile(){
     Authorize().then(Download)
     .then(function (result) {
         console.log('Działa!');
     }, function (err) {
-        console.log('Nie działa :v');
+        console.log('Nie działa :v' + err);
     });
     console.log('End!');
 }
