@@ -59,8 +59,13 @@ function Download() {
     return new Promise(function (resolve, reject) {
 
         client.readFile(fileName, { arrayBuffer: true }, function (error, contents) {
-            console.log((contents));
-            displayContents(contents);
+            if (!error) {
+                console.log((contents));
+                displayContents(contents);
+            }
+            else {
+                throw new Error(error);
+            }
         });
     }
     )
