@@ -8,12 +8,14 @@
 
     <input type="file" name="pic" accept="image/*" id="file-input">
     <button onclick="Submit()">submit</button>    
-    <button onclick="DownloadFile()">Download</button>    
+    <!--<button onclick="DownloadFile()">Download</button>-->    
+    <button onclick="ReadFileList()">ReadFileList</button>    
     <h3>Contents of the file:</h3>
     <pre id="file-content"></pre>
     <img id="photo" />
     <script src="dropbox-datastores-1.2.0.js"></script>
     <script src="DropBox.js"></script>
+    <ul id="files-list"></ul>
     <!--<script src="https://www.dropbox.com/static/api/dropbox-datastores-1.2-latest.js" type="text/javascript"></script>-->
 </body>
 </html>
