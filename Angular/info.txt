@@ -1,0 +1,5 @@
+http://mykytamorachov.github.io/index.html
+
+Refactor given angular app: add routing support;
+add authentication verification non-authenticated user will be redirected to home page.
+Please refactor file structure.

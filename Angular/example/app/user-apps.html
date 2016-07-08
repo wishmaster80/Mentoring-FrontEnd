@@ -1,0 +1,11 @@
+<div>
+    <h4>User Apps:</h4>
+    <ul class="list-group">
+        <li class="list-group-item" ng-repeat="app in apps">
+            <h5>{{app.title}}</h5>
+            <ul class="list-group">
+                <li class="list-group-item" ng-repeat="item in app.items">{{item.title}}</li>
+            </ul>
+        </li>
+    </ul>
+</div>

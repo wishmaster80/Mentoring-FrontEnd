@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+	<meta charset="utf-8">
+	<title>Index</title>
+	<link rel="stylesheet" href="resources/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="resources/style.css">
+	<script src="resources/angular/angular.js"></script>
+	<script src="resources/angular/angular-route.js"></script>
+</head>
+<body ng-controller="appCtrl">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8"></div>
+			<div class="col-md-4" data-login></div>
+		</div>
+		<div class="row">
+			<div class="col-md-4" user-menu select-feature="selectFeature(id)"></div>
+			<div class="col-md-8">
+				<div ng-if="isFeature" data-feature-app></div>
+				<div ng-if="isParadise" data-paradise-app></div>
+				<div ng-if="isCar" data-car-app></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- app -->
+	<script src="app/app.js"></script>
+	<script src="app/app.controller.js"></script>
+	<script src="app/user.service.js"></script>
+	<script src="app/paradise.service.js"></script>
+	<script src="app/car.service.js"></script>
+	<script src="app/login.directive.js"></script>
+	<script src="app/feature.app.directive.js"></script>
+	<script src="app/paradise.app.directive.js"></script>
+	<script src="app/car.app.directive.js"></script>
+	<script src="app/user.menu.directive.js"></script>
+</body>
+</html>
