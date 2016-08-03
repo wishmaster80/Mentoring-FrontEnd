@@ -4,9 +4,9 @@
 	angular.module('app')
 		.directive('login', loginDirective);
 
-	loginDirective.$inject = ['userSrv'];
+	loginDirective.$inject = ['userSrv','$location'];
 
-	function loginDirective(user){
+	function loginDirective(user, $location){
 		return {
 			restrict: 'AE',
 			//templateUrl: 'app/login.html',
@@ -18,6 +18,8 @@
 
 				scope.login = function(){
 					user.logon();
+					console.log('login');
+					$location.path('/f');
 				};
 
 				scope.logout = function(){

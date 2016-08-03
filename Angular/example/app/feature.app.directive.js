@@ -23,7 +23,9 @@
 				];
 
 				scope.addApp = function(appId){
+					console.log("addApp" + appId)
 					var app = getApp(appId);
+					console.log("app " + app)
 					if(app){
 						userSrv.addApp(app);
 					}

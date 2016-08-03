@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html ng-app="app">
 <head lang="en">
-	<meta charset="utf-8">
+	<meta charset="utf-8"/>
 	<title>Index</title>
-	<link rel="stylesheet" href="resources/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" href="resources/style.css">
+	<link rel="stylesheet" href="resources/bootstrap/css/bootstrap.css"/>
+	<link rel="stylesheet" href="resources/style.css"/>
 	<script src="resources/angular/angular.js"></script>
 	<script src="resources/angular/angular-route.js"></script>
 </head>
@@ -15,12 +15,7 @@
 			<div class="col-md-4" data-login></div>
 		</div>
 		<div class="row">
-			<div class="col-md-4" user-menu select-feature="selectFeature(id)"></div>
-			<div class="col-md-8">
-				<div ng-if="isFeature" data-feature-app></div>
-				<div ng-if="isParadise" data-paradise-app></div>
-				<div ng-if="isCar" data-car-app></div>
-			</div>
+			<div data-ng-view class='appView' ></div>
 		</div>
 	</div>
 

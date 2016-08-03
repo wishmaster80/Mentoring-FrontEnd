@@ -12,7 +12,7 @@
 			templateUrl: 'app/user-apps.html',
 			scope: {},
 			link: function(scope, elem, attrs){
-				//scope.apps = userSrv.getApps();
+				scope.apps = userSrv.getApps();
 
 				scope.$watch(userSrv.getApps, function(apps){
 					scope.apps = apps;

@@ -19,6 +19,7 @@
 				scope.items = scope.paradise.items;
 
 				scope.addItem = function(id){
+					console.log("addItem" + id)
 					var item = getItem(id);
 					if(item){
 						userSrv.addAppItem(scope.paradise.id, item);
