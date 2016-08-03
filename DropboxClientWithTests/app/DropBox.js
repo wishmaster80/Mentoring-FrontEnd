@@ -1,4 +1,7 @@
-﻿var client = new Dropbox.Client({ key: "r4vdwcjpvu6hn1y" });
+﻿ require('./dropbox-datastores-1.2.0');
+var Dropbox = require('dropbox');
+
+var client = new Dropbox({ key: "r4vdwcjpvu6hn1y" });
 var fileContent;
 var fileName;
 function Authorize() {
@@ -29,7 +32,7 @@ function displayContents(contents) {
     var blob = new Blob([arrayBufferView], { type: "image/jpeg" });
     var urlCreator = window.URL || window.webkitURL;
     var imageUrl = urlCreator.createObjectURL(blob);
-    var img = document.querySelector("#photo");
+    //var img = document.querySelector("#photo");
     img.src = imageUrl;
 
 }
@@ -49,8 +52,8 @@ function readSingleFile(e) {
     reader.readAsArrayBuffer(file);
 }
 
-document.getElementById('file-input')
-  .addEventListener('change', readSingleFile, false);
+// document.getElementById('file-input')
+  // .addEventListener('change', readSingleFile, false);
 
 function Download(fileName) {
     return new Promise(function (resolve, reject) {
@@ -120,29 +123,29 @@ function GetFileList() {
     }
  
 function ClearFielList() {
-    var ul = document.getElementById('files-list');
-    if (ul) {
-        while (ul.firstChild) {
-            ul.removeChild(ul.firstChild);
-        }
-    }
+    // var ul = document.getElementById('files-list');
+    // if (ul) {
+        // while (ul.firstChild) {
+            // ul.removeChild(ul.firstChild);
+        // }
+    // }
 }
 
 function AddFileToList(filePath, isFile) {
-    var ul = document.getElementById('files-list');
-    var li = document.createElement("li");
-    var a;
-    if (isFile) {
-        a = document.createElement('a');
-        a.innerHTML = filePath;
-        a.href = '#';
-        a.onclick = DownloadFile;
-    }
-    else {
-        a = document.createTextNode(filePath);
-    }
-    li.appendChild(a);        
-    ul.appendChild(li);    
+    // var ul = document.getElementById('files-list');
+    // var li = document.createElement("li");
+    // var a;
+    // if (isFile) {
+        // a = document.createElement('a');
+        // a.innerHTML = filePath;
+        // a.href = '#';
+        // a.onclick = DownloadFile;
+    // }
+    // else {
+        // a = document.createTextNode(filePath);
+    // }
+    // li.appendChild(a);        
+    // ul.appendChild(li);    
 
 }
 

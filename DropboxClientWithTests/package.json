@@ -4,16 +4,17 @@
   "description": " Dropbox Client with tests.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "node_modules/.bin/supervisor app",
+    "test": "node_modules/.bin/mocha -w"
   },
   "author": "Adam Pryka",
   "license": "ISC",
   "devDependencies": {
-    "mocha": "*",
-    "should": ">= 0.0.1"
+    "mocha": "^3.0.0",
+    "should": ">= 0.0.1",
+    "xhr2": "*"
   },
-  "scripts": {
-    "start": "node_modules/.bin/supervisor app",
-    "test": "node_modules/.bin/mocha -w"
+  "dependencies": {
+    "dropbox": "^2.1.0"
   }
 }
