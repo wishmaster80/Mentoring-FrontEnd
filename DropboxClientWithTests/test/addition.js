@@ -1,7 +1,7 @@
 'use strict';
 
-var myFunc1 = require('../app/dropbox-datastores-1.2.0.js');
-var myFunc2 = require('../app/DropBox.js');
+//var myFunc1 = require('../app/dropbox-datastores-1.2.0.js');
+var DropBoxClient = require('../app/DropBox.js');
 
 
 
