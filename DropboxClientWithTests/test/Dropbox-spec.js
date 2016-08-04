@@ -1,8 +1,8 @@
 'use strict';
 
-//var myFunc1 = require('../app/dropbox-datastores-1.2.0.js');
 var DropBoxClient = require('../app/DropBox.js');
 var testFunction = DropBoxClient.testFunction;
+var Authorize = DropBoxClient.Authorize;
 
 describe('testFunction', function () {
   it('should add two params correctly', function (done) {
@@ -11,6 +11,16 @@ describe('testFunction', function () {
     testFunction(a, b).should.equal(3);
     // must call done() so that mocha know that we are... done.
     // Useful for async tests.
+    done();
+  });
+});
+
+describe('Authorize', function () {
+  it('should Authorize to Dropbox API', function (done) {
+    var key = "r4vdwcjpvu6hn1y";
+    Authorize(key).then(function(data){
+        data.should.equal("isAuthenticated");
+    })
     done();
   });
 });
