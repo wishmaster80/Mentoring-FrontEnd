@@ -1,31 +1,35 @@
-Class DropBoxClient{
-    constructor(){
-        super();
-        this.client = new Dropbox.Client({ key: "r4vdwcjpvu6hn1y" });
-        this.fileContent;
-        this.fileName;
-    }
-    Authorize() {
+var Dropbox = require('./dropbox-datastores-1.2.0.js');
+var client = new Dropbox.Client({ key: "r4vdwcjpvu6hn1y" });
+var fileContent;
+var fileName;
+module.exports = {
+    testFunction: function(a, b){
+        return a+b;
+    },
+    Authorize: function() {
         return new Promise(function (resolve, reject) {
-            this.client.authenticate();
-            if (this.client.isAuthenticated()) {
+            client.authenticate();
+            if (client.isAuthenticated()) {
                 resolve("isAuthenticated");
-            } else {
+            }
+            else {
                 reject(Error("Authenticated  error"));
             }
-        })
-    }
+        }
+        )
+    },
 
-    Upload() {
+    Upload: function() {
         return new Promise(function (resolve, reject) {
-            this.client.writeFile(this.fileName, this.fileContent, function () {
+            client.writeFile(fileName, fileContent, function () {
                 console.log('File written!');
                 resolve();
             });
-        })
-    }
+        }
+        )
+    },
 
-    displayContents(contents) {
+    displayContents: function(contents) {
         var arrayBufferView = new Uint8Array(contents);
         var blob = new Blob([arrayBufferView], { type: "image/jpeg" });
         var urlCreator = window.URL || window.webkitURL;
@@ -33,30 +37,27 @@ Class DropBoxClient{
         var img = document.querySelector("#photo");
         img.src = imageUrl;
 
-    }
+    },
 
-    readSingleFile(e) {
+    readSingleFile: function(e) {
         var file = e.target.files[0];
 
         if (!file) {
             return;
         }
-        this.fileName = file.name;
+        fileName = file.name;
         var reader = new FileReader();
         reader.onload = function (e) {
             var contents = e.target.result;
-            this.fileContent = contents;
+            fileContent = contents;
         };
         reader.readAsArrayBuffer(file);
-    }
+    },
 
-    // document.getElementById('file-input')
-    // .addEventListener('change', readSingleFile, false);
-
-    Download(this.fileName) {
+    Download: function(fileName) {
         return new Promise(function (resolve, reject) {
 
-            this.client.readFile(this.fileName, { arrayBuffer: true }, function (error, contents) {
+            client.readFile(fileName, { arrayBuffer: true }, function (error, contents) {
                 if (!error) {
                     console.log((contents));
                     displayContents(contents);
@@ -66,11 +67,12 @@ Class DropBoxClient{
                 }
             });
         }
-    )
-    }
+        )
+    },
 
 
-    Submit() {
+    Submit: function()
+    {
         Authorize().then(Upload)
         .then(function (result) {
             console.log('Działa!');
@@ -78,9 +80,9 @@ Class DropBoxClient{
             console.log('Nie działa :v');
         });
         console.log('End!');
-    }
+    },
 
-    DownloadFile() {
+    DownloadFile: function() {
         console.log(this.innerHTML);
         Authorize().then(Download(this.innerHTML))
         .then(function (result) {
@@ -89,46 +91,46 @@ Class DropBoxClient{
             console.log('Nie działa :v' + err);
         });
         console.log('End!');
-    }
+    },
 
-    ReadFileList() {
+    ReadFileList: function() {
         Authorize().then(GetFileList)
-        .then(function (result) {
-            console.log('Działa!');
-        }, function (err) {
-            console.log('Nie działa :v' + err);
-        });
+    .then(function (result) {
+        console.log('Działa!');
+    }, function (err) {
+        console.log('Nie działa :v' + err);
+    });
         console.log('End!');
-    }
+    },
 
-    GetFileList() {
+    GetFileList: function() {
         return new Promise(function (resolve, reject) {
 
-            this.client.readdir('/', { list: true }, function (status, reply) {
+            client.readdir('/', { list: true }, function (status, reply) {
                 ClearFielList();
                 for (var i = 0; i <= reply.length; i++) {
                     if (reply[i] !== undefined) {
-                        this.client.metadata(reply[i], function (status, reply) {
+                        client.metadata(reply[i], function (status, reply) {
                             AddFileToList(reply.path,  reply.isFile);
                         }
-                    );
+                        );
+                    }
                 }
-            }
 
-        });
-    });
-    }
+            });
+            });
+    },
 
-    ClearFielList() {
+    ClearFielList: function() {
         var ul = document.getElementById('files-list');
         if (ul) {
             while (ul.firstChild) {
                 ul.removeChild(ul.firstChild);
             }
         }
-    }
+    },
 
-    AddFileToList(filePath, isFile) {
+    AddFileToList: function(filePath, isFile) {
         var ul = document.getElementById('files-list');
         var li = document.createElement("li");
         var a;
@@ -146,5 +148,5 @@ Class DropBoxClient{
 
     }
 }
-
-module.exports = DropBoxClient;
+// document.getElementById('file-input')
+//   .addEventListener('change', readSingleFile, false);
