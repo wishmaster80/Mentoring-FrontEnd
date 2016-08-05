@@ -28,7 +28,8 @@
 			// }
 		// });
 
-		 function toggleFeatures(id){
+		function toggleFeatures(id) {
+		    console.log(user.getApps().length)
 			if(id == -1){
 				$location.path('/f');
 			}else if(id == 12){

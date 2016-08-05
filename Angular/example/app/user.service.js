@@ -29,13 +29,9 @@
 		};
 
 		this.addApp = function(app){
-			console.log("user.name " + user.name);
-			console.log("app " + app);
 			if(user.name && app){
-				if(!getUserAppById(app.id)){
-					console.log("app22 " + user.apps.length);
-					user.apps.push(app);
-					console.log("app33 " + user.apps.length);
+				if(!getUserAppById(app.id)){					
+					user.apps.push(app);					
 				}
 			}
 		};

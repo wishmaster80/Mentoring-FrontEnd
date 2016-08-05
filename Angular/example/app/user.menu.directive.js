@@ -24,8 +24,8 @@
 					scope.selectFeature({id: id});
 				};
 
-				scope.$watch(userSrv.getApps, function(apps){
-					scope.apps = !userSrv.checkLogin() ? apps : [];
+				scope.$watch(userSrv.getApps, function(apps){				    
+				    scope.apps =userSrv.checkLogin() ? apps : [];
 				});
 
 				scope.$watch(userSrv.checkLogin, function(isLogon){
